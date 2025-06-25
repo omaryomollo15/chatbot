@@ -1,1 +1,1 @@
-web: rasa run --enable-api --cors "*" --port $PORT
+web: rasa run actions --port 5055 & rasa run -m models/core-20250624-001111-red-yard.tar.gz --enable-api --port $PORT --cors '*'
