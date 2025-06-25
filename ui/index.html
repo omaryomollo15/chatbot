@@ -631,11 +631,12 @@ userInput.style.height = '2.5rem';
 sendButton.classList.remove('active');
 
 try {
-const response = await fetch('http://0.0.0.0:5005/webhooks/rest/webhook', {
-method: 'POST',
-headers: { 'Content-Type': 'application/json' },
-body: JSON.stringify({ sender: 'user', message: message }),
-});
+        const response = await fetch('https://backend-chatbot-u50f.onrender.com/webhooks/rest/webhook', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ sender: 'user', message: message }),
+            signal: AbortSignal.timeout(60000)
+        });
 
 if (!response.ok) {
 throw new Error(`Hitilafu ya HTTP! Hali: ${response.status} ${response.statusText}`);
