@@ -1,0 +1,44 @@
+# Python virtual environments
+rasa_env/
+test_env/
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs and temporary files
+*.log
+*.tmp
+.DS_Store
+*.swp
+
+# IDE files
+.vscode/
+.idea/
+
+# Rasa cache
+.rasa/
+backend/.rasa/
+rasa.db
+*.sqlite
+*.cache
+
+# Large PDFs
+MwongozoMauzo.pdf
+mwongozo.pdf
+vianzio.pdf
+
+# Model tarballs
+backend/models/*.tar.gz
+!models/core-20250624-001111-red-yard.tar.gz
+
+# Miscellaneous
+models_backup/
+*.bak
+.augment_nlu.py.swp
+.extract.py.swp

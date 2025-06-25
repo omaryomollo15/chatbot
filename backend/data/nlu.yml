@@ -1,0 +1,380 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - mambo
+    - Mambo
+    - mambo vipi
+    - habari
+    - Habari yako
+    - habari za asubuhi
+    - jambo
+    - Jambo vipi
+    - salaam
+    - vipi
+    - Vipi sasa
+    - za asubuhi
+    - za mchana
+    - za jioni
+    - za usiku
+    - habari za mchana
+    - habari za jioni
+    - sasa
+    - poa
+    - shikamoo
+    - niaje
+    - salama
+    - heko
+    - safi
+    - kipekee
+    - karibu
+- intent: ask_sales_process
+  examples: |
+    - mauzo
+    - jinsi ya kukopesha simu
+    - mkopo wa simu
+    - kukopa simu
+    - kukopesha simu
+    - nakopesha
+    - kopesha
+    - Nawezaje kufanya mauzo ya simu?
+    - Mchakato wa mauzo ni upi?
+    - Nifanye nini ili niuzie simu?
+    - Je, mauzo yanafanyika vipi?
+    - Ninawezaje kuuza simu kwa wateja?
+    - Mchakato wa kuuza simu ni upi?
+    - Nianzie wapi kuuza simu?
+    - Je, ni hatua gani za mauzo?
+    - Mauzo ya simu yanahitaji nini?
+    - Ninawezaje kuanza mauzo?
+    - Mteja anapaswa kufanya nini kwa mauzo?
+    - Je, ni mchakato gani wa mauzo?
+    - Nifuate hatua zipi kuuza simu?
+    - Mauzo yanahitaji maandalizi gani?
+    - Je, ninauzaje simu kwa usahihi?
+    - Mchakato wa mauzo unahusisha nini?
+    - Ninawezaje kumudu mauzo ya simu?
+    - Hatua za mauzo za simu ni zipi?
+    - Je, ni vipi ninaweza kuuza simu?
+    - Mauzo ya simu yanafanyaje?
+    - Nifanyeje ili mauzo yaende sawa?
+    - Je, mauzo ya simu yanajumuisha nini?
+    - Ninawezaje kushiriki katika mauzo?
+    - Mchakato wa mauzo unachukua muda gani?
+    - Je, ni nini kinachohitajika kwa mauzo?
+- intent: ask_payment_methods
+  examples: |
+    - mteja anataka kulipia
+    - lipia
+    - Malipo
+    - nawezaje kulipia
+    - malipo ya simu
+    - simu ya mteja imefungwa
+    - imefungwa
+    - imefungiwa
+    - simu ya mteja imefungiwa
+    - imezimwa
+    - simu ya mteja imezimwa
+    - kufanya malipo
+    - kufanyamalipo
+    - Je, ni njia gani za malipo zinazokubalika?
+    - Nitalipaje kwa simu?
+    - Malipo yanafanyika vipi?
+    - Ninawezaje kulipa simu?
+    - Je, kuna njia zipi za malipo?
+    - Malipo ya simu yanakubali vipi?
+    - Nitalipa kwa njia gani?
+    - Je, naweza kulipa vipi?
+    - Malipo yanahitaji nini?
+    - Ninawezaje kufanya malipo?
+    - Je, ni chaguzi gani za malipo?
+    - Malipo ya simu yanafanyaje?
+- intent: ask_maintenance
+  examples: |
+    - nimeharibu simu
+    - mteja ameharibu simu
+    - simu ya mteja imeharibika
+    - imeharibika
+    - haribu
+    - Je, ninawezaje kutunza simu?
+    - Simu inahitaji matengenezo gani?
+    - Nifanye nini ili simu idumu?
+    - Je, ni vipi ninaweza kutunza simu?
+    - Matengenezo ya simu ni yapi?
+    - Ninawezaje kuhakikisha simu iko salama?
+    - Je, kuna vidokezo vya kutunza simu?
+    - Simu inapaswa kutunzwa vipi?
+    - Nifanyeje ili simu isiharibike?
+    - Je, ni nini kinachohitajika kwa matengenezo?
+    - Ninawezaje kulinda simu yangu?
+    - Vidokezo vya matengenezo ni vipi?
+    - Je, simu inahitaji huduma gani?
+    - Nifanye nini kwa simu iwe sawa?
+    - Matengenezo ya simu yanafanyaje?
+    - Ninawezaje kuepuka uharibifu wa simu?
+    - Je, kuna ushauri wa kutunza simu?
+    - Simu inahitaji kumudu vipi?
+    - Nifanyeje ili simu iendelee vizuri?
+    - Je, ni huduma gani za simu?
+    - Ninawezaje kuangalia simu yangu?
+    - Matengenezo ya simu yanachukua muda gani?
+    - Je, kuna mambo ya kuepuka kwa simu?
+    - Nifanye nini kwa simu isiyofanya vizuri?
+    - Ushauri wa matengenezo ni upi?
+- intent: ask_lost_phone
+  examples: |
+    - simu ya mteja imepotea
+    - Nimepoteza simu
+    - Imeibiwa
+    - Nimeibiwa
+    - Nifanye nini ikiwa nimepoteza simu?
+    - Simu yangu imepotea, nifanye nini?
+    - Je, ninawezaje kupata simu iliyopotea?
+    - Nifuate hatua zipi simu ikipotea?
+    - Simu imepotea, nianzie wapi?
+    - Je, kuna msaada kwa simu iliyopotea?
+    - Nifanyeje ikiwa simu haipatikani?
+    - Simu yangu haionekani, nifanye nini?
+    - Je, ni vipi ninaweza kushughulikia simu iliyopotea?
+    - Nifanye nini simu ikiwa imepotea?
+    - Simu imepotea, nitaipataje?
+    - Je, kuna ushauri kwa simu iliyopotea?
+    - Nifanye nini ikiwa simu yangu imepotea?
+    - Simu haipatikani, nifanyeje?
+    - Je, ni hatua gani za simu iliyopotea?
+    - Nifanye nini simu isipopatikana?
+    - Simu yangu imepotea, nipe ushauri
+    - Je, ninawezaje kuripoti simu iliyopotea?
+    - Nifanyeje simu ikipotea ghafla?
+    - Simu imepotea, nitaifuatiliaje?
+    - Je, kuna njia ya kupata simu iliyopotea?
+    - Nifanye nini baada ya kupoteza simu?
+    - Simu yangu haipo, nifanye nini?
+    - Je, ni vipi ninaweza kufanya simu ikipotea?
+    - Ushauri wa simu iliyopotea ni upi?
+- intent: ask_bot_identity
+  examples: |
+    - unafanya kazi gani?
+    - Wewe ni nani?
+    - Wewe ni chatbot gani?
+    - Je, wewe ni nani hasa?
+    - Ni nani huyu ninayezungumza naye?
+    - Wewe ni programu gani?
+    - Je, una jina gani?
+    - Ni chatbot gani hii?
+    - Wewe ni bot ya aina gani?
+    - Je, wewe ni robot?
+    - Ni nani anayejibu maswali yangu?
+    - Wewe ni nani OnfonMobile?
+    - Je, wewe ni mtu au bot?
+    - Ni nani huyu anayezungumza nami?
+    - Wewe ni programu ya kusaidia vipi?
+    - Je, unawezaje kunisaidia?
+    - Ni bot gani hii ya OnfonMobile?
+    - Wewe ni nani kwenye mfumo huu?
+    - Je, wewe ni AI au mtu?
+    - Ni nani anayesimamia hii chatbot?
+    - Wewe ni bot ya kufanya nini?
+    - Je, wewe ni msaidizi wa kidigitali?
+    - Ni nani aliyekutengeneza?
+    - Wewe ni bot ya kusudi gani?
+    - Je, wewe ni msaidizi wa mauzo?
+    - Ni nani huyu anayejibu hapa?
+- intent: all_lock_solutions
+  examples: |
+    - jinsi ya kulock simu
+    - Nipe lock solutions zote
+    - Je, hatua za kulock simu zote ni zipi?
+    - Ninawezaje kuona michakato yote ya kulock?
+    - Nipe maelezo ya lock solutions zote
+    - Hatua za kulock zote ni zipi?
+    - Lock solutions zote zinafanyaje?
+    - Je, ninawezaje kujua hatua za lock zote?
+    - Nipe orodha ya michakato ya kulock simu
+    - Maelezo ya kulock simu zote ni yapi?
+    - Hatua zote za kufunga simu ni zipi?
+    - Je, ninawezaje kulock simu?
+    - Mchakato wa kulock simu ni upi?
+    - Ninawezaje kufunga simu?
+    - Je, simu inalock vipi?
+    - Nifanye nini kulock simu?
+    - Kulock simu kunahitaji nini?
+    - Je, ni hatua gani za kulock simu?
+    - Ninawezaje kuhakikisha simu imelock?
+    - Simu inafungwa vipi?
+    - Je, kuna mchakato wa kulock simu?
+    - Nifanyeje ili simu ilock?
+    - Kulock simu kunafanyaje?
+    - Je, ni vipi ninaweza kulock simu?
+    - Hatua za kulock simu ni zipi?
+    - Ninawezaje kufunga simu kwa usalama?
+    - Je, simu inalindwa vipi kwa lock?
+    - Nifanye nini kufunga simu?
+    - Kulock simu kunachukua muda gani?
+    - Je, kuna vidokezo vya kulock simu?
+    - Ninawezaje kulock simu kwa haraka?
+    - Mchakato wa kufunga simu ni upi?
+    - Je, ni nini kinachohitajika kulock simu?
+    - Nifanyeje simu ikae salama kwa lock?
+    - Kulock simu kunahusisha nini?
+    - Je, kuna ushauri wa kulock simu?
+- intent: lock_phone
+  examples: |
+    - Je ninawezaje kulock simu?
+    - nataka kulock simu
+- intent: specific_lock_phone
+  examples: |
+    - Je ninawezaje kulock simu ya Oppo?
+    - lock oppo
+    - Kulock simu ya Samsung kunafanyaje?
+    - lock samsung
+    - Ninawezaje kufunga simu ya Infinix?
+    - lock infinix
+    - Je simu ya Tecno inalock vipi?
+    - lock tecno
+    - lock vivo
+    - Nifanye nini kulock simu ya Vivo?
+    - v-Trust
+    - v Trust
+    - vtrust
+    - Kulock simu kwa V-Trust kunahitaji nini?
+    - payTrigger
+    - paytriga
+    - pay-trigger
+    - Je Pay Trigger lock inafanyaje?
+    - oguard
+    - o-Guard
+    - oguard
+    - Guard
+    - O-Guard lock ni ya aina gani?
+    - Trustonic
+    - Ninawezaje kuweka Trustonic lock kwenye simu?
+    - thinkadams
+    - think Adam
+    - Je ninawezaje kulock simu kwa Think Adams?
+    - Hatua za kulock simu ya Itel ni zipi?
+    - Kulock simu ya Realme kunafanyaje?
+    - Ninawezaje kufunga simu ya Honor?
+    - Je simu ya ZTE inalock vipi?
+    - V-Trust lock inafanyaje?
+    - Pay Trigger ni nini?
+    - O-Guard lock inatumika vipi?
+    - Trustonic lock ni ya aina gani?
+    - Think Adams lock inafanyaje?
+- intent: phone_pricing
+  examples: |
+    - vianzio
+    - vianzo vya simu
+    - Je, bei za simu ni zipi?
+    - Bei ya simu ni kiasi gani?
+    - Ninawezaje kujua bei za simu?
+    - Je, simu zinagharimu kiasi gani?
+    - Bei za simu za OnfonMobile ni zipi?
+    - Nipe orodha ya bei za simu
+    - Je, kuna bei gani za simu?
+    - Simu zinapatikana kwa bei gani?
+    - Ninawezaje kuangalia bei za simu?
+    - Je, ni gharama gani za simu?
+    - Bei za simu zinajumuisha nini?
+    - Nipe maelezo ya bei za simu
+    - Je, simu za bei nafuu ziko?
+    - Bei ya simu inaweza kuwa kiasi gani?
+    - Ninawezaje kupata bei za simu?
+    - Je, kuna orodha ya bei za simu?
+    - Simu zinagharimu vipi?
+    - Nipe bei za simu zote
+    - Je, bei za simu ni rahisi?
+    - Bei ya simu inaanza wapi?
+    - Ninawezaje kujua gharama za simu?
+    - Je, kuna bei za simu za chini?
+    - Bei za simu zinatofautiana vipi?
+    - Nipe ushauri wa bei za simu
+    - Je, simu zinagharimu kiasi gani kwa OnfonMobile?
+- intent: ask_specific_price
+  examples: |
+    - Bei ya OPPO A18 4/64GB ni kiasi gani?
+    - Nipe bei ya VIVO Y28
+    - Samsung A05 inagharimu kiasi gani?
+    - Je, Infinix Smart 8 bei yake ni nini?
+    - Bei ya Realme C61 6/128GB ni ipi?
+    - Tecno Camon 30S inauzwa bei gani?
+    - Nipe bei ya Honor X7B
+    - Hisense E70 Pro bei yake ni kiasi gani?
+    - Je, ZTE A35 inagharimu kiasi gani?
+    - Bei ya OPPO A58 8/128GB ni nini?
+    - Nipe bei ya Vivo Y03 4/64GB
+    - Samsung A05s 4/128GB inauzwa vipi?
+    - Infinix Note 30 Pro bei yake ni ipi?
+    - Realme Note 50 6/64GB inagharimu kiasi gani?
+    - Bei ya Tecno Spark 30C ni nini?
+    - bei za Oppo
+    - bei simu za Oppo
+    - simu za oppo zinauzwaje
+    - nataka kujua bei za oppo
+    - Oppo
+    - bei za Infinix
+    - bei simu za Infinix
+    - simu za infinix zinauzwaje
+    - Infinix
+    - simu za Tecno
+    - bei za simu za Tecno
+    - simu za tecno zinauzwaje
+    - bei za tecno
+    - Tecno
+    - bei za Vivo
+    - simu za vivo zinauzwaje
+    - simu za vivo
+    - bei za Vivo
+    - vianzio vivo
+    - Vivo
+    - vianzio Samsung
+    - bei za Samsung
+    - samsung zinauzwaje
+    - nataka kujua bei za simu za samsung
+    - Samsung
+    - Realme zinauwaje
+    - nataka kujua bei za Realme
+    - realme beigani
+    - simu za realme zinauzwaje
+    - Realme
+    - bei za simu za Honor
+    - simu za honor zinauzwaje
+    - bei za honor
+    - vianzio vya honor
+    - Honor
+    - hisense zinauzwaje
+    - bei za hisense
+    - vianzio vya hisense
+    - Hisense
+    - bei za ZTE
+    - Vianzio vya ZTE
+    - simu za ZTE zianuzwaje?
+    - ZTE
+- intent: thank_you
+  examples: |
+    - penda
+    - nimesaidika
+    - saidia
+    - nimemaliza
+    - saidika
+    - saidiwa
+    - fanikiwa
+    - nimefurahi
+    - furahi
+    - Asante
+    - Shukrani
+    - Asante sana
+    - Nashukuru
+    - Shukuru
+    - Asante kweli
+    - Shukrani za dhati
+    - Asante mno
+    - Nashukuru sana
+    - Shukrani nyingi
+    - Asante tena
+    - Shukuru kweli
+    - Asante rafiki
+    - Nashukuru mno
+    - Shukrani za moyo

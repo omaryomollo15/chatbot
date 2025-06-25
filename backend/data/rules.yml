@@ -1,0 +1,54 @@
+version: "3.1"
+rules:
+  - rule: Respond to greeting
+    steps:
+      - intent: greet
+      - action: utter_greet
+  - rule: Respond to bot identity query
+    steps:
+      - intent: ask_bot_identity
+      - action: utter_ask_bot_identity
+  - rule: Respond to sales process query
+    steps:
+      - intent: ask_sales_process
+      - action: utter_ask_sales_process
+  - rule: Respond to payment methods query
+    steps:
+      - intent: ask_payment_methods
+      - action: utter_ask_payment_methods
+  - rule: Respond to maintenance query
+    steps:
+      - intent: ask_maintenance
+      - action: utter_ask_maintenance
+  - rule: Respond to lost phone query
+    steps:
+      - intent: ask_lost_phone
+      - action: utter_ask_lost_phone
+  - rule: Respond to general lock phone query
+    steps:
+      - intent: lock_phone
+      - action: utter_lock_phone
+  - rule: Respond to specific lock phone query
+    steps:
+      - intent: specific_lock_phone
+      - action: action_lock_phone
+  - rule: Respond to all lock solutions query
+    steps:
+      - intent: all_lock_solutions
+      - action: utter_all_lock_solutions
+  - rule: Respond to general phone pricing query
+    steps:
+      - intent: phone_pricing
+      - action: utter_phone_pricing
+  - rule: Respond to specific phone pricing query
+    steps:
+      - intent: ask_specific_price
+      - action: action_send_price
+  - rule: Respond to thank you
+    steps:
+      - intent: thank_you
+      - action: utter_thank_you
+  - rule: Handle fallback
+    steps:
+      - intent: nlu_fallback
+      - action: utter_fallback
