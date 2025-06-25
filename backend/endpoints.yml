@@ -1,4 +1,3 @@
 action_endpoint:
   url: "http://localhost:5055/webhook"
-rest:
-  url: "http://0.0.0.0:$PORT/webhooks/rest/webhook"
+rest: {}
